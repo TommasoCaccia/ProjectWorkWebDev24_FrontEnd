@@ -15,12 +15,14 @@
 
     <script>
         let originalData;
+        let dataTable;
 
         function inizializzaDataTable() {
             fetch('../Script/azienda.json')
                 .then(response => response.json())
                 .then(dip => {
                     console.log(dip);
+                    originalData = dip.dipendenti;
                     dataTable = new DataTable('#tabellaDipendenti', {
                         "columns": [
                             { "data": "nome" },
@@ -30,9 +32,39 @@
                             { "data": "ruolo" },
                             { "data": "stipendio" }
                         ],
-                        data: dip.dipendenti
+                        data: dip.dipendenti,
+                        "order": [[0, "asc"]]
                     });
                 });
+        }
+
+        function selezioneCategoria(ruolo) {
+            if (!dataTable || !originalData) return;
+
+            // Se l'opzione "Leggende" è selezionata, chiama la funzione filtraPerLeggende
+            if (ruolo === "Leggende") {
+                filtraPerLeggende();
+            } else {
+                let dipendentiFiltrati;
+
+                if (ruolo === "") {
+                    dipendentiFiltrati = originalData;
+                } else {
+                    dipendentiFiltrati = originalData.filter(dipendente => dipendente.ruolo === ruolo);
+                }
+
+                dataTable.clear();
+                dataTable.rows.add(dipendentiFiltrati).draw();
+            }
+        }
+
+        function filtraPerLeggende() {
+            if (!dataTable || !originalData) return;
+
+            let dipendentiFiltrati = originalData.filter(dipendente => new Date(dipendente.dataAssunzione) < new Date('2001-01-01'));
+
+            dataTable.clear();
+            dataTable.rows.add(dipendentiFiltrati).draw();
         }
 
     </script>
@@ -65,7 +97,7 @@
                     <th>Codice Fiscale</th>
                     <th>Data Assunzione</th>
                     <th>ruolo</th>
-                    <th>stipendio</th>
+                    <th>stipendio €</th>
                 </tr>
             </thead>
         </table>
