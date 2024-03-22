@@ -18,7 +18,7 @@
         let dataTable;
 
         function inizializzaDataTable() {
-            fetch('../Script/azienda.json')
+            fetch('../Json/azienda.json')
                 .then(response => response.json())
                 .then(dip => {
                     console.log(dip);
@@ -33,6 +33,7 @@
                             { "data": "stipendio" }
                         ],
                         data: dip.dipendenti,
+                        //riordino la tabella in ordine alfabetico per NOME
                         "order": [[0, "asc"]]
                     });
                 });
@@ -96,8 +97,8 @@
                     <th>Cognome</th>
                     <th>Codice Fiscale</th>
                     <th>Data Assunzione</th>
-                    <th>ruolo</th>
-                    <th>stipendio €</th>
+                    <th>Categoria</th>
+                    <th>Stipendio</th>
                 </tr>
             </thead>
         </table>
