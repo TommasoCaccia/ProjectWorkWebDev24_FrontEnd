@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../Script/Login.css">
+</head>
+
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 border-bottom fixed-top bg-white">
+                <a href="Homepage.html"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <img id="logo1" src="../Immagini/LogoSito.png" alt="Logo personalizzato">
+                    <img id="scritta1" src="../Immagini/ScrittaSito.png" alt="Logo personalizzato">
+                </a>
+
+                <ul id="ScritteNavigazione" class="nav nav-pills">
+                    <li class="nav-item"><a href="Homepage.html" class="nav-link">Homepage</a></li>
+                    <li class="nav-item"><a href="Login.html" class="nav-link">Login</a></li>
+                </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <h2 class="card-title text-center">Login</h2>
+                    <form id="loginForm">
+                        <div class="LogForm">
+                            <label for="username" class="form-label">Username or Email</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="LogForm">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="text-center">
+                            <button id="Pulsante2" type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../Script/Login.js"></script>
+    <hr class="featurette-divider">
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+            <div class="container">
+                <div class="row">
+                    <div id="about" class="col-md-4">
+                        <h5>About Us</h5>
+                        Benvenuti in Recruit IT Solutions, la soluzione definitiva per le vostre esigenze di
+                        reclutamento nel mondo digitale e tecnologico. Fondata con una missione chiara e ambiziosa,
+                        ci
+                        impegniamo a fornire servizi all'avanguardia che collegano talenti eccezionali
+                        alle aziende più innovative.
+                    </div>
+                    <div id="contact" class="col-md-4">
+                        <h5>Contact Us</h5>
+                        Address: 123 Company St, City, Country
+                        Email: info@example.com
+                        Phone: +1234567890
+                    </div>
+                </div>
+                <div id="sotto" class="row">
+                    <div class="col-md-12 text-center">
+                        <p>&copy; 2024 Recruit ITSolutions. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
