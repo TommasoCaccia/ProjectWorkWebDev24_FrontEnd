@@ -27,13 +27,13 @@
 #about {
     text-align: center;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #contact {
     text-align: center;
     margin-left: auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #sotto {
@@ -65,6 +65,18 @@ h5 {
     .form-switch {
         padding-left: 2.5em !important;
         margin-top: 0.2em;
+    }
+
+    #about {
+        text-align: center;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    
+    #contact {
+        text-align: center;
+        margin-left: auto;
+        margin-top: 50px;
     }
 }
 
@@ -232,17 +244,16 @@ hr{
 }
 
 .form-switch .form-check-input:focus {
-    background-image: url('../Immagini/wow2.png');
+    background-image: url('../Immagini/Pulsante2.png');
     --bs-form-switch-bg: none;
 }
 
 .form-switch .form-check-input {
-    background-image: url('../Immagini/wow3.png');
+    background-image: url('../Immagini/Pulsante3.png');
     --bs-form-switch-bg: none;
 }
 
 .form-switch {
-    display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 3.5em;

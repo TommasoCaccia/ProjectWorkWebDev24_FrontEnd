@@ -27,13 +27,13 @@
 #about {
     text-align: center;
     margin-right: auto;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 #contact {
     text-align: center;
     margin-left: auto;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 #sotto {
@@ -61,7 +61,7 @@ h5 {
     }
 
     header {
-        margin-bottom: 300px !important;
+        margin-bottom: 320px !important;
     }
 
     #logo1 {
@@ -73,6 +73,17 @@ h5 {
         margin-top: 0.2em;
     }
     
+    #about {
+        text-align: center;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    
+    #contact {
+        text-align: center;
+        margin-left: auto;
+        margin-top: 50px;
+    }
 
 }
 
@@ -124,11 +135,6 @@ hr {
 
 }
 
-.my-4 {
-    margin-top: 0rem !important;
-    margin-bottom: 0rem !important;
-}
-
 #Sotto {
     padding: 0px !important;
 }
@@ -147,19 +153,30 @@ hr {
 }
 
 .form-switch .form-check-input:focus {
-    background-image: url('../Immagini/wow2.png');
+    background-image: url('../Immagini/Pulsante2.png');
     --bs-form-switch-bg: none;
 }
 
 .form-switch .form-check-input {
-    background-image: url('../Immagini/wow3.png');
+    background-image: url('../Immagini/Pulsante3.png');
     --bs-form-switch-bg: none;
 }
 
 .form-switch {
-    display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 3.5em;
 }
+
+.form-control:focus {
+    border-color: #00AEEF;
+    outline: 0; 
+    box-shadow: 0 0 0 0.25rem #00afef64;
+}
+
+.py-3 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
 

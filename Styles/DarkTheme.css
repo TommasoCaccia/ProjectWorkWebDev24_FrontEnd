@@ -62,10 +62,60 @@ body.dark-theme {
 
 
 .form-switch .form-check-input:checked {
-    background-image: url('../Immagini/wow1.png');
+    background-image: url('../Immagini/Pulsante1.png');
     --bs-form-switch-bg: none;
 }
 
 .form-control {
     color:#dde6ed 
 }
+
+.form-select {
+    background-color: #27374d;
+    color: #dde6ed;
+}
+
+.form-select:focus {
+    background-color: #dde6ed;
+    border-color: #9db2bf;
+    color: #000000;
+    box-shadow: 0 0 0 0.25rem #9db2bf5f;
+    outline: 0;;
+}
+
+#tabellaDipendenti{
+    --bs-table-bg: none;
+    --bs-table-color: #dde6ed;
+    --bs-table-striped-color: #dde6ed;
+}
+
+.pagination {
+    --bs-pagination-bg: #27374d;
+    --bs-pagination-disabled-bg: #27374d;
+    --bs-pagination-color: #dde6ed;
+    --bs-pagination-disabled-color: #dde6ed;
+    --bs-pagination-focus-color:#27374d ;
+}
+
+.active>.page-link, .page-link.active {
+    background-color: #9db2bf;
+    border-color: #9db2bf;
+}
+
+.page-link:focus {
+    box-shadow: 0 0 0 0.25rem #9db2bf5f;
+}
+
+.page-link:hover {
+    color: #27374d;
+}
+
+#Pulsante2 {
+    background-color: #9db2bf;
+    color: #27374d;
+    outline: 0;
+}
+
+
+
+
