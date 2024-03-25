@@ -63,8 +63,11 @@ h5 {
     #logo1 {
         align-items: center;
     }
-    
 
+    .form-switch {
+        padding-left: 2.5em !important;
+        margin-top: 0.2em;
+    }
 }
 
 .form-group {
@@ -142,6 +145,35 @@ hr {
 .LogForm{
     margin-top: 20px;
 }
+
+.container
+header {
+    background-color: #ffffff;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem #00afef64;
+    border-color: #00AEEF;
+}
+
+.form-switch .form-check-input:focus {
+    background-image: url('../Immagini/wow2.png');
+    --bs-form-switch-bg: none;
+}
+
+.form-switch .form-check-input {
+    background-image: url('../Immagini/wow3.png');
+    --bs-form-switch-bg: none;
+}
+
+.form-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3.5em;
+}
+
+
 
 
 

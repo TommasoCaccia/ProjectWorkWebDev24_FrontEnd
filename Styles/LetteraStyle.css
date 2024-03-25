@@ -49,22 +49,30 @@ h5 {
 }
 
 @media (max-width: 600px) {
+    
     .nav {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .mb-3 {
         margin-bottom: 0px !important;
     }
 
-    header{
+    header {
         margin-bottom: 300px !important;
     }
 
-    #logo1{
+    #logo1 {
         align-items: center;
     }
+
+    .form-switch {
+        padding-left: 2.5em !important;
+        margin-top: 0.2em;
+    }
+    
 
 }
 
@@ -92,7 +100,7 @@ h5 {
     padding-bottom: 1.5rem !important;
 }
 
-.py-4{
+.py-4 {
     padding-top: 0rem !important;
     padding-bottom: 0rem !important;
 }
@@ -109,18 +117,49 @@ header {
     align-items: center;
 }
 
-hr{
+hr {
     margin: 0px;
     opacity: .12;
     margin-top: 50px;
-    
+
 }
 
-.my-4{
-    margin-top: 0rem !important; 
+.my-4 {
+    margin-top: 0rem !important;
     margin-bottom: 0rem !important;
 }
 
-#Sotto{
+#Sotto {
     padding: 0px !important;
 }
+
+
+.container {
+    header {
+        background-color: #ffffff;
+    }
+}
+
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem #00afef64;
+    border-color: #00AEEF;
+}
+
+.form-switch .form-check-input:focus {
+    background-image: url('../Immagini/wow2.png');
+    --bs-form-switch-bg: none;
+}
+
+.form-switch .form-check-input {
+    background-image: url('../Immagini/wow3.png');
+    --bs-form-switch-bg: none;
+}
+
+.form-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3.5em;
+}
+

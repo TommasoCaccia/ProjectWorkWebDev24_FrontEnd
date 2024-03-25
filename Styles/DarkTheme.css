@@ -1,0 +1,71 @@
+/* Stili per il tema scuro */
+body.dark-theme {
+    background-color: #27374d ;
+    color: #dde6ed;
+}
+
+/* Aggiungi altri stili specifici per il tema scuro qui */
+/* 1piu scuro 27374d  2 526d82 3 9db2bf 4 dde6ed*/
+
+
+
+.container{
+    header{
+    background-color: #526d82 ;
+    }
+}
+
+
+.nav-link {
+    font-family: 'Verdana';
+    color: #dde6ed;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #9db2bf;
+}
+
+#Pulsante1 {
+    background-color: #9db2bf;
+    color: #27374d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#Pulsante1:hover {
+    background-color: #dde6ed;
+    color: #27374d;
+}
+
+.form-control{
+    background-color:#27374d ;
+}
+
+.form-control:focus{
+    background-color:#dde6ed ;
+    border-color: #9db2bf;
+    box-shadow: 0 0 0 0.25rem #9db2bf5f;
+}
+
+
+.form-check-input:focus {
+    box-shadow:0 0 0 0.25rem #9db2bf5f;
+}
+
+.form-check-input:checked {
+    background-color: #27374d;
+    border-color: #dde6ed;
+}
+
+
+.form-switch .form-check-input:checked {
+    background-image: url('../Immagini/wow1.png');
+    --bs-form-switch-bg: none;
+}
+
+.form-control {
+    color:#dde6ed 
+}
