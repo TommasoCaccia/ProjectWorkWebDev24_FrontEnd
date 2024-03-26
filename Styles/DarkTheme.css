@@ -8,6 +8,11 @@ body.dark-theme {
 /* 1piu scuro 27374d  2 526d82 3 9db2bf 4 dde6ed*/
 
 
+#logo2 {
+    width: 45px;
+    height: auto;
+}
+
 
 .container{
     header{
@@ -15,9 +20,16 @@ body.dark-theme {
     }
 }
 
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('fonts/LEMONMILK-Regular.otf') format('opentype'),
+}
 
 .nav-link {
-    font-family: 'Verdana';
+    
+    font-family: 'LEMON MILK', serif;
+    font-size: 14px;
+    font-weight:400;
     color: #dde6ed;
     text-decoration: none;
 }
@@ -68,6 +80,10 @@ body.dark-theme {
 
 .form-control {
     color:#dde6ed 
+}
+
+.form-control:focus {
+    color: #27374d;
 }
 
 .form-select {

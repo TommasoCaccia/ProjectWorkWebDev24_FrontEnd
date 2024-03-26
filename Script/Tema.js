@@ -2,6 +2,7 @@ const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 const themeLink = document.getElementById('theme');
 let themePreference = localStorage.getItem('themePreference');
+  
 
 // Imposta il tema predefinito come chiaro se non c'è nessuna preferenza salvata
 if (!themePreference) {
@@ -31,5 +32,28 @@ themeToggle.addEventListener('click', function() {
   }
 });
 
+
+window.onload = function() {
+  var themeToggle = document.getElementById('theme-toggle');
+  var logo1 = document.getElementById('logo1');
+  var logo2 = document.getElementById('logo2');
+  if(themeToggle.checked) {
+      logo1.style.display = 'none';
+      logo2.style.display = 'block';
+  } else {
+      logo1.style.display = 'block';
+      logo2.style.display = 'none';
+  }
+};
+
+themeToggle.addEventListener('change', function() {
+  if(this.checked) {
+      logo1.style.display = 'none';
+      logo2.style.display = 'block';
+  } else {
+      logo1.style.display = 'block';
+      logo2.style.display = 'none';
+  }
+});
 
 

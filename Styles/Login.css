@@ -1,5 +1,5 @@
 #logo1 {
-    width: 50px;
+    width: 45px;
     height: auto;
 }
 
@@ -9,8 +9,16 @@
     margin-left: 20px;
 }
 
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('fonts/LEMONMILK-Regular.otf') format('opentype'),
+}
+
+
 .nav-link {
-    font-family: 'Verdana';
+    font-size: 14px;
+    font-family: 'LEMON MILK', serif;
+    font-weight:400;
     color: #000000;
     text-decoration: none;
     transition: color 0.3s;
@@ -53,6 +61,7 @@ h5 {
     .nav {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     
@@ -66,7 +75,7 @@ h5 {
 
     .form-switch {
         padding-left: 2.5em !important;
-        margin-top: 0.2em;
+        margin-top: 0.5em;
     }
 
     #about {
@@ -184,6 +193,8 @@ hr {
     align-items: center;
     padding-left: 3.5em;
 }
+
+
 
 
 

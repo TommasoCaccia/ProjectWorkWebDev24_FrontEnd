@@ -1,5 +1,5 @@
 #logo1 {
-    width: 50px;
+    width: 45px;
     height: auto;
 }
 
@@ -9,8 +9,15 @@
     margin-left: 20px;
 }
 
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('fonts/LEMONMILK-Regular.otf') format('opentype'),
+}
+
 .nav-link {
-    font-family: 'Verdana';
+    font-size: 14px;
+    font-family: 'LEMON MILK', serif;
+    font-weight:400;
     color: #000000;
     text-decoration: none;
     transition: color 0.3s;
@@ -53,9 +60,10 @@ h5 {
     .nav {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
-    
+
     header {
         margin-bottom: 250px !important;
     }
@@ -66,7 +74,7 @@ h5 {
 
     .form-switch {
         padding-left: 2.5em !important;
-        margin-top: 0.2em;
+        margin-top: 0.5em;
     }
 
     #about {
@@ -74,7 +82,7 @@ h5 {
         margin-right: auto;
         margin-top: 30px;
     }
-    
+
     #contact {
         text-align: center;
         margin-left: auto;
@@ -126,8 +134,8 @@ hr {
 
 #LoginForm {
 
- padding-left: 12px;
- padding-right: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 #Pulsante2 {
@@ -137,7 +145,7 @@ hr {
     padding: 10px 20px;
     cursor: pointer;
     transition: color 0.3s, background-color 0.3s;
-    margin-top: 25px ;
+    margin-top: 25px;
 }
 
 #Pulsante2:hover {
@@ -154,7 +162,7 @@ hr {
     margin-bottom: 0rem !important;
 }
 
-.LogForm{
+.LogForm {
     margin-top: 20px;
 }
 
@@ -189,7 +197,8 @@ hr {
     box-shadow: none;
 }
 
-.active>.page-link, .page-link.active {
+.active>.page-link,
+.page-link.active {
     background-color: #00AEEF;
     border-color: #00AEEF;
 }
@@ -200,7 +209,7 @@ hr {
 
 .form-select:focus {
     border-color: #00AEEF;
-    outline: 0; 
+    outline: 0;
     box-shadow: 0 0 0 0.25rem #00afef64;
 }
 
@@ -229,7 +238,32 @@ hr {
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 1050px) {
+    header {
+        margin-bottom: 180px !important;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #footer {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        margin-bottom: 200px !important;
+    }
+
+    .h1,
+    h1 {
+        font-size: calc(1.325rem + .9vw) !important;
+    }
+}
+
+
+@media (max-width: 600px) {
 
     #footer {
         justify-content: center;
@@ -238,17 +272,136 @@ hr {
     }
 
     #tabellaDipendenti {
-        font-size: 14.5px;
         font-weight: 480;
     }
 
     header {
-        margin-bottom: 320px !important;
+        margin-bottom: 330px !important;
     }
 
+    .h1,
+    h1 {
+        font-size: calc(1.325rem + .9vw) !important;
+    }
 }
 
-.h1, h1 {
+@media (max-width: 450px) {
+
+    #footer {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tabellaDipendenti {
+        font-size: 13.5px;
+        font-weight: 480;
+    }
+
+    header {
+        margin-bottom: 330px !important;
+    }
+
+    .h1,
+    h1 {
+        font-size: calc(1.325rem + .9vw) !important;
+    }
+}
+
+@media (max-width: 420px) {
+
+    #footer {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tabellaDipendenti {
+        font-size: 13.5px;
+        font-weight: 480;
+    }
+
+    header {
+        margin-bottom: 350px !important;
+    }
+
+    .h1,
+    h1 {
+        font-size: calc(1.325rem + .9vw) !important;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #footer {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tabellaDipendenti {
+        font-size: 12.5px;
+        font-weight: 480;
+    }
+
+    header {
+        margin-bottom: 340px !important;
+    }
+
+    .h1,
+    h1 {
+        font-size: calc(1.325rem + .9vw) !important;
+    }
+}
+
+@media (max-width: 380px) {
+
+    #footer {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tabellaDipendenti {
+        font-size: 11.5px;
+        font-weight: 480;
+    }
+
+    header {
+        margin-bottom: 340px !important;
+    }
+
+    .h1,
+    h1 {
+        font-size: calc(1.325rem + .9vw) !important;
+    }
+}
+
+@media (max-width: 365px) {
+
+    #footer {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tabellaDipendenti {
+        font-size: 11px;
+        font-weight: 480;
+    }
+
+    header {
+        margin-bottom: 340px !important;
+    }
+
+    .h1,
+    h1 {
+        font-size: calc(1.325rem + .9vw) !important;
+    }
+}
+
+
+.h1,
+h1 {
     font-size: 2rem;
 }
-
