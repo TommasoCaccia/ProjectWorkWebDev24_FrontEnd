@@ -9,26 +9,22 @@
     margin-left: 20px;
 }
 
-  @font-face {
+@font-face {
     font-family: 'LEMON MILK';
-    src: url('fonts/LEMONMILK-Regular.otf') format('opentype'),
+    src: url('Text/LEMONMILK-Regular.otf') format('opentype'),
 }
 
 .nav-link {
     font-family: 'LEMON MILK', serif;
     font-size: 14px;
-    font-weight:400;
+    font-weight: 400;
     color: #000000;
     text-decoration: none;
-    transition: color 0.3s;
+    transition:none;
 }
 
 .nav-link:hover {
     color: #00AEEF;
-}
-
-.col-md-6 {
-    margin-top: 30px;
 }
 
 #about {
@@ -62,11 +58,7 @@ h5 {
         margin-bottom: 0px !important;
     }
 
-    #immagine2 {
-        margin-top: 30px;
-    }
-
-    header{
+    header {
         margin-bottom: 220px !important;
     }
 
@@ -80,7 +72,7 @@ h5 {
         margin-right: auto;
         margin-top: 30px;
     }
-    
+
     #contact {
         text-align: center;
         margin-left: auto;
@@ -107,7 +99,7 @@ h5 {
 }
 
 #myCarousel {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 #ok {
@@ -130,47 +122,33 @@ header {
     align-items: center;
 }
 
-hr{
+hr {
     margin: 0px;
     opacity: .12
 }
 
 #immagine1 {
-    display: block;
-    margin-right: 100px;
-    max-width: 80%;
-    height: auto;
     margin-bottom: 60px;
 }
 
 #immagine2 {
-    display: block;
-    max-width: 80%;
-    height: auto;
-    margin-top: 60px;
     margin-bottom: 60px;
-    margin-left: 100px;
 }
 
 #immagine3 {
-    display: block;
-    margin-right: 100px;
-    max-width: 80%;
-    height: auto;
-    margin-top: 60px;
     margin-bottom: 60px;
 }
 
 #immagine4 {
-    display: block;
-    max-width: 80%;
-    height: auto;
-    margin-top: 60px;
     margin-bottom: 60px;
-    margin-left: 100px;
 }
 
-#Paragrafo1{
+.col-md-6 {
+    margin-top: 30px;
+}
+
+
+#Paragrafo1 {
     margin-left: 100px;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -178,65 +156,17 @@ hr{
     max-width: 450px;
 }
 
-#Titolo1{
-    margin-left: 100px;
-}
-
-#Paragrafo2{
-    margin-right: 100px;
-    margin-top: 15px;
-    margin-bottom: 50px;
-    text-align: right;
-    max-width: 500px;
-    margin-left: auto;
-}
-
-#Titolo2{
-    margin-right: 100px;
-    text-align: right;
-    margin-top: 60px;
-}
-
-#Paragrafo3{
-    margin-left: 100px;
-    margin-top: 15px;
-    margin-bottom: 50px;
-    text-align: left;
-    max-width: 450px;
-}
-
-#Titolo3{
-    margin-left: 100px;
-    text-align: left;
-    margin-top: 60px;
-}
-
-#Paragrafo4{
-    margin-right: 100px;
-    margin-top: 15px;
-    margin-bottom: 50px;
-    text-align: right;
-    max-width: 500px;
-    margin-left: auto;
-}
-
-#Titolo4{
-    margin-right: 100px;
-    text-align: right;
-    margin-top: 60px;
-}
-
-#Titolo1Car{
+#Titolo1Car {
     text-align: center;
     margin-bottom: 30px;
 }
 
-#Titolo2Car{
+#Titolo2Car {
     text-align: center;
     margin-bottom: 30px;
 }
 
-#Titolo3Car{
+#Titolo3Car {
     text-align: center;
     margin-bottom: 30px;
 }
@@ -245,6 +175,7 @@ hr{
     header {
         background-color: #ffffff;
     }
+    
 }
 
 .form-check-input:focus {
@@ -268,8 +199,6 @@ hr{
     padding-left: 3.5em;
 }
 
-
-
 .content {
     display: flex;
     flex-direction: column;
@@ -286,7 +215,8 @@ hr{
     gap: 15px;
 }
 
-.paragraph .text, .paragraph .image {
+.paragraph .text,
+.paragraph .image {
     flex: 1;
 }
 
@@ -307,9 +237,218 @@ hr{
     font-size: 1em;
 }
 
+.Colonna2 {
+    text-align: right;
+}
+
+.Testo1 {
+    text-align: right;
+}
+
+footer {
+    padding: 0px !important;
+}
+
+.my-4 {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+}
 
 
 
+@media (max-width: 800px) {
+    .col-md-6 {
+        text-align: center;
+    }
 
+    #immagine1 {
+        width: 400px !important;
+        height: auto !important;
+    }
 
+    #immagine2 {
+        width: 400px !important;
+        height: auto !important;
+    }
 
+    #immagine3 {
+        width: 400px !important;
+        height: auto !important;
+    }
+
+    #immagine4 {
+        width: 400px !important;
+        height: auto !important;
+    }
+
+    .py-3 {
+        padding-top: 1.7rem !important;
+        padding-bottom: 1.7rem !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .col-md-6 {
+        text-align: center;
+    }
+
+    #myCarousel {
+        margin-bottom: 20px;
+        margin-top: 280px; 
+    }
+}
+
+@media (max-width: 450px) {
+    .col-md-6 {
+        text-align: center;
+    }
+
+    #immagine1 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine2 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine3 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine4 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    .py-3 {
+        padding-top: 1.7rem !important;
+        padding-bottom: 1.7rem !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .col-md-6 {
+        text-align: center;
+    }
+
+    #immagine1 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine2 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine3 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine4 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    .py-3 {
+        padding-top: 1.7rem !important;
+        padding-bottom: 1.7rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .col-md-6 {
+        text-align: center;
+    }
+
+    #immagine1 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine2 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine3 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine4 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    .py-3 {
+        padding-top: 1.7rem !important;
+        padding-bottom: 1.7rem !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .col-md-6 {
+        text-align: center;
+    }
+
+    #immagine1 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine2 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine3 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine4 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    .py-3 {
+        padding-top: 1.7rem !important;
+        padding-bottom: 1.7rem !important;
+    }
+}
+
+@media (max-width: 365px) {
+    .col-md-6 {
+        text-align: center;
+    }
+
+    #immagine1 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine2 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine3 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    #immagine4 {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    .py-3 {
+        padding-top: 1.7rem !important;
+        padding-bottom: 1.7rem !important;
+    }
+}

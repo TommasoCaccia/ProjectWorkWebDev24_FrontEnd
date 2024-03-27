@@ -20,13 +20,13 @@ if (themePreference === 'dark') {
 // Aggiungi un event listener per cambiare il tema quando l'utente clicca sul toggle
 themeToggle.addEventListener('click', function() {
   if (body.classList.contains('light-theme')) {
-    body.classList.remove('light-theme');
     body.classList.add('dark-theme');
+    body.classList.remove('light-theme');
     themeLink.setAttribute('href', '../Styles/DarkTheme.css');
     localStorage.setItem('themePreference', 'dark'); // Salva la preferenza del tema
   } else {
-    body.classList.remove('dark-theme');
     body.classList.add('light-theme');
+    body.classList.remove('dark-theme');
     themeLink.setAttribute('href', '../Styles/Lettera.css');
     localStorage.setItem('themePreference', 'light'); // Salva la preferenza del tema
   }
@@ -36,23 +36,18 @@ themeToggle.addEventListener('click', function() {
 window.onload = function() {
   var themeToggle = document.getElementById('theme-toggle');
   var logo1 = document.getElementById('logo1');
-  var logo2 = document.getElementById('logo2');
   if(themeToggle.checked) {
-      logo1.style.display = 'none';
-      logo2.style.display = 'block';
+    logo1.src= "../Immagini/LogoSito2.png";
   } else {
-      logo1.style.display = 'block';
-      logo2.style.display = 'none';
+      logo1.src= "../Immagini/LogoSito.png";
   }
 };
 
 themeToggle.addEventListener('change', function() {
   if(this.checked) {
-      logo1.style.display = 'none';
-      logo2.style.display = 'block';
+    logo1.src= "../Immagini/LogoSito2.png";
   } else {
-      logo1.style.display = 'block';
-      logo2.style.display = 'none';
+    logo1.src= "../Immagini/LogoSito.png";
   }
 });
 

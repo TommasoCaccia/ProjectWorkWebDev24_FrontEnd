@@ -11,8 +11,9 @@
 
 @font-face {
     font-family: 'LEMON MILK';
-    src: url('fonts/LEMONMILK-Regular.otf') format('opentype'),
+    src: url('Text/LEMONMILK-Regular.otf') format('opentype'),
 }
+
 
 
 .nav-link {
@@ -21,7 +22,7 @@
     font-weight:400;
     color: #000000;
     text-decoration: none;
-    transition: color 0.3s;
+    transition:none;
 }
 
 .nav-link:hover {
